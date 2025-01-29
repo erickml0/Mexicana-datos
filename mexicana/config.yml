@@ -1,1 +1,31 @@
-
+pipe:
+  path_root: "payload"
+  transform:
+    strip:
+      - "id"
+      - "title"
+    add_hash:
+      - target: "fingerprint"
+        method: "md5"
+        fields:
+          id: null
+          museu: null
+      - target: "hash-content"
+        method: "md5"
+        fields:
+          "id": null
+          "title": null
+  target_collection:
+    connection_name: "inehrm.tainacan"
+    collection_id: "" #Falta por llenar
+    metadata_identifier: "" #metadatos en el agregador que almacena el identificador único de los elementos en el proceso de agregación
+    metadata_hash_content: "4829963" #???
+    ignore_items_without_identifier: true # ignorar el item en caso no tenga metadato identificador
+    metadata:
+      "179801": "title" #metadato titulo por defecto no aparece en la api
+      "719316": "id"
+      "_thumbnail": "thumbnail"
+      "_document": "document"
+      
+    
+    
