@@ -22,8 +22,8 @@ transform:
   add_fields:
     target: payload
     fields:
-    museu: "Instituto Nacional de Estudios Históricos de las Revoluciones de México"
-    colecao: "Instituto Nacional de Estudios Históricos de las Revoluciones de México"
+      museu: "Instituto Nacional de Estudios Históricos de las Revoluciones de México"
+      colecao: "Instituto Nacional de Estudios Históricos de las Revoluciones de México"
   
 
 
