@@ -16,7 +16,7 @@ pipe:
           "id": null
           #"title": null
   target_collection:
-    connection_name: "inehrm.tainacan"
+    connection_name: "mexicana.tainacan"
     collection_id: "6" #Colección destino
     metadata_identifier: "592" #metadatos en el agregador que almacena el identificador único de los elementos en el proceso de agregación
     metadata_hash_content: "595" #Al momento no es necesario hacer hash
