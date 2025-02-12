@@ -7,7 +7,7 @@ url_parameters:
   mapper: dublin-core
 pagination:
   request:
-    pagesize:50
+    pagesize: 50
     field_pagesize: perpage
     field_page: page
   response:
