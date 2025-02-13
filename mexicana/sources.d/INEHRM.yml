@@ -19,6 +19,8 @@ transform:
     fields:
       - { from: "id", to: "payload.id", use_as_id: true }
       - { from: "data.dc:title.value", to: "payload.title" }
+      - { from: "thumbnail", to: "payload.thumbnail" }
+      - { from: "document", to: "payload.document" }
   add_fields:
     target: payload
     fields:
