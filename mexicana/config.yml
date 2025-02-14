@@ -20,7 +20,7 @@ pipe:
   target_collection:
     connection_name: "mexicana.tainacan"
     collection_id: "6" #Colección destino
-    metadata_identifier: "592" #metadatos en el agregador que almacena el identificador único de los elementos en el proceso de agregación
+    metadata_identifier: "identifier" #metadatos en el agregador que almacena el identificador único de los elementos en el proceso de agregación
     metadata_hash_content: "595" #Al momento no es necesario hacer hash
     ignore_items_without_identifier: true # ignorar el item en caso no tenga metadato identificador
     metadata:
