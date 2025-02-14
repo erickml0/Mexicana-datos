@@ -2,18 +2,18 @@ pipe:
   path_root: "payload"
   transform:
     strip:
-      - "id"
+      - "identifier"
       - "title"
     add_hash:
       - target: "fingerprint"
         method: "md5"
         fields:
-          id: null
+          identifier: null
           museu: null
       - target: "hash-content"
         method: "md5"
         fields:
-          "id": null
+          "identifier": null
           "title": null
   target_collection:
     connection_name: "mexicana.tainacan"
