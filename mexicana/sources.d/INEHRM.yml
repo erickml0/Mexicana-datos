@@ -17,7 +17,7 @@ pagination:
 transform:
   rename:
     fields:
-      - { from: "id", to: "payload.id", use_as_id: true }
+      #- { from: "id", to: "payload.id", use_as_id: true }
       - { from: "data.dc:identifier.value", to: "payload.identifier"}
       - { from: "data.dc:title.value", to: "payload.title" }
       - { from: "thumbnail", to: "payload.thumbnail" }
