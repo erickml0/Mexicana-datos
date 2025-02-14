@@ -3,8 +3,6 @@ pipe:
   transform:
     strip:
       - "id"
-      - "identifier"
-      - "title"
     add_hash:
       - target: "fingerprint"
         method: "md5"
