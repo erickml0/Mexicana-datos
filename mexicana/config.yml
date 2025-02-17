@@ -3,19 +3,20 @@ pipe:
   transform:
     strip:
       - "id"
+      - "identifier"
       - "title"
     add_hash:
       - target: "fingerprint"
         method: "md5"
         fields:
           id: null
-          museu: null
+          institucion: null
       - target: "hash-content"
         method: "md5"
         fields:
           "id": null
-          "title": null
           "identifier": null
+          "title": null
   target_collection:
     connection_name: "mexicana.tainacan"
     collection_id: "6" #Colección destino
