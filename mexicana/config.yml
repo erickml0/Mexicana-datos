@@ -26,6 +26,8 @@ pipe:
     metadata:
       "9": "title" #metadato titulo
       "568": "identifier" #metadato id
+      "610": "institucion"
+      "605": "coleccion"
       "592": "fingerprint"
       "595": "hash-content"
       "_thumbnail": "thumbnail"
