@@ -3,6 +3,7 @@ pipe:
   transform:
     strip:
       - "id"
+      - "title"
     add_hash:
       - target: "fingerprint"
         method: "md5"
@@ -13,8 +14,8 @@ pipe:
         method: "md5"
         fields:
           "id": null
-          "identifier": null
           "title": null
+          "identifier": null
   target_collection:
     connection_name: "mexicana.tainacan"
     collection_id: "6" #Colección destino
@@ -28,6 +29,3 @@ pipe:
       "595": "hash-content"
       "_thumbnail": "thumbnail"
       "_document": "document"
-      
-    
-    
