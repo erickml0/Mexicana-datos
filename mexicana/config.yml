@@ -1,3 +1,4 @@
+#Config.yml nuevo (metadatos globales)
 pipe:
   path_root: "payload"
   transform:
@@ -20,16 +21,16 @@ pipe:
   target_collection:
     connection_name: "mexicana.tainacan"
     collection_id: "6" #Colección destino
-    metadata_identifier: "592" #metadatos en el agregador que almacena el identificador único de los elementos en el proceso de agregación
-    metadata_hash_content: "595" #Al momento no es necesario hacer hash
+    metadata_identifier: "648" #metadatos en el agregador que almacena el identificador único de los elementos en el proceso de agregación
+    metadata_hash_content: "650" #Al momento no es necesario hacer hash
     ignore_items_without_identifier: true # ignorar el item en caso no tenga metadato identificador
     metadata:
-      "623": "id" #id del agregador
-      "9": "title" #metadato titulo
-      "568": "identifier" #metadato id
-      "610": "institucion"
-      "605": "coleccion"
-      "592": "fingerprint"
-      "595": "hash-content"
+      "646": "id" #id del agregador ok
+      "636": "title" #metadato titulo ok
+      "643": "identifier" #metadato id
+      "638": "institucion" #ok
+      "640": "coleccion" #
+      "648": "fingerprint"
+      "650": "hash-content"
       "_thumbnail": "thumbnail"
       "_document": "document"
