@@ -30,6 +30,6 @@ pipe:
       "610": "institucion"
       "605": "coleccion"
       "592": "fingerprint"
-      "595": "hash-content"
+      #"595": "hash-content"
       "_thumbnail": "thumbnail"
       "_document": "document"
