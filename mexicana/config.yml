@@ -27,7 +27,7 @@ pipe:
     collection_id: "6" #Colección destino
     metadata_identifier: "648" #metadatos en el agregador que almacena el identificador único de los elementos en el proceso de agregación
     metadata_hash_content: "650" #Al momento no es necesario hacer hash
-    ignore_items_without_identifier: true # ignorar el item en caso no tenga metadato identificador
+    ignore_items_without_identifier: false # ignorar el item en caso no tenga metadato identificador
     metadata:
       "646": "id" #id del agregador ok
       "636": "title" #metadato titulo ok
