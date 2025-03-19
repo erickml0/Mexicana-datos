@@ -31,7 +31,7 @@ pipe:
     metadata:
       "643": "id" #id del agregador ok
       "636": "title" #metadato titulo ok
-      "648": "identifier" #metadato id
+      #"648": "identifier" #metadato id
       #"638": "institucion" #ok
       #"640": "coleccion" #
       "701": "fingerprint"
