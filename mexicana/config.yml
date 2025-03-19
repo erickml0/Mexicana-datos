@@ -4,7 +4,7 @@ pipe:
   transform:
     strip:
       - "id"
-      - "identifier"
+      #- "identifier"
       - "title"
       - "url"
     lowercase:
@@ -14,12 +14,12 @@ pipe:
         method: "md5"
         fields:
           id: null
-          institucion: null
+          #institucion: null
       - target: "hash-content"
         method: "md5"
         fields:
           "id": null
-          "identifier": null
+          #"identifier": null
           "title": null
           "url": null
   target_collection:
