@@ -1,6 +1,6 @@
 
 idsource: inehrm_01
-url: http://repositorio-inehrm.cultura.gob.mx/wp-json/tainacan/v2/collection/179798/items/
+url: https://repositorio-inehrm.cultura.gob.mx/wp-json/tainacan/v2/collection/179798/items/
 url_parameters:
   order: DESC
   orderby: date
