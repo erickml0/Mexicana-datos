@@ -32,8 +32,8 @@ pipe:
       "648": "id" #id del agregador ok
       "636": "title" #metadato titulo ok
       "643": "identifier" #metadato id
-      "638": "institucion" #ok
-      "640": "coleccion" #
+      #"638": "institucion" #ok
+      #"640": "coleccion" #
       "646": "fingerprint"
       #"650": "hash-content"
       "679": "url"
