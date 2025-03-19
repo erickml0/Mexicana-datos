@@ -29,7 +29,7 @@ pipe:
     metadata_hash_content: "650" #hash de los metadatos por si cambio alguno
     ignore_items_without_identifier: true # ignorar el item en caso no tenga metadato identificador
     metadata:
-      "643": "id" #id del agregador ok
+      "648": "id" #id del agregador ok
       "636": "title" #metadato titulo ok
       #"648": "identifier" #metadato id
       #"638": "institucion" #ok
