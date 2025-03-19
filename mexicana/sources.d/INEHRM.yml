@@ -1,5 +1,6 @@
+
 idsource: inehrm_01
-url: https://repositorio-inehrm.cultura.gob.mx/wp-json/tainacan/v2/collection/179798/items/
+url: http://repositorio-inehrm.cultura.gob.mx/wp-json/tainacan/v2/collection/179798/items/
 url_parameters:
   order: DESC
   orderby: date
@@ -28,6 +29,3 @@ transform:
     fields:
       institucion: "Instituto Nacional de Estudios Históricos de las Revoluciones de México"
       coleccion: "Exposiciones digitales"
-  
-
-
