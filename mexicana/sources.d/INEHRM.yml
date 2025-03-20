@@ -24,8 +24,8 @@ transform:
       - { from: "url", to: "payload.url" }
       - { from: "thumbnail", to: "payload.thumbnail" }
       - { from: "document", to: "payload.document" }
-  #add_fields:
-  #  target: payload
-  #  fields:
-  #    institucion: "Instituto Nacional de Estudios Históricos de las Revoluciones de México"
-  #    coleccion: "Exposiciones digitales"
+  add_fields:
+    target: payload
+    fields:
+      institucion: "Instituto Nacional de Estudios Históricos de las Revoluciones de México"
+      coleccion: "Exposiciones digitales"
