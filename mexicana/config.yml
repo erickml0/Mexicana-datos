@@ -14,7 +14,7 @@ pipe:
         method: "md5"
         fields:
           id: null
-          #institucion: null
+          institucion: null
       - target: "hash-content"
         method: "md5"
         fields:
@@ -32,8 +32,8 @@ pipe:
       "648": "id" #id del agregador ok
       "636": "title" #metadato titulo ok
       #"648": "identifier" #metadato id
-      #"638": "institucion" #ok
-      #"640": "coleccion" #
+      "638": "institucion" #ok
+      "640": "coleccion" #
       "701": "fingerprint"
       #"650": "hash-content"
       "679": "url"
