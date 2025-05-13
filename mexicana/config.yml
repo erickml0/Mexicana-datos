@@ -4,7 +4,7 @@ pipe:
   transform:
     strip:
       - "id"
-      #- "identifier"
+      - "identifier"
       - "title"
       - "url"
     lowercase:
@@ -19,7 +19,7 @@ pipe:
         method: "md5"
         fields:
           "id": null
-          #"identifier": null
+          "identifier": null
           "title": null
           "url": null
   target_collection:
@@ -31,11 +31,11 @@ pipe:
     metadata:
       "648": "id" #id del agregador ok
       "636": "title" #metadato titulo ok
-      #"648": "identifier" #metadato id
+      "648": "identifier" #metadato id
       "638": "institucion" #ok
       "640": "coleccion" #
       "701": "fingerprint"
-      #"650": "hash-content"
+      "650": "hash-content"
       "679": "url"
       "_thumbnail": "thumbnail"
       "_document": "document"
