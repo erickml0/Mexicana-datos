@@ -47,4 +47,5 @@ pipe:
       #"650": "hash-content" 
       "679": "url"
       "_thumbnail": "thumbnail"
-      "_document": "document"
+      document_field: "document"
+      #"_document": "document"
