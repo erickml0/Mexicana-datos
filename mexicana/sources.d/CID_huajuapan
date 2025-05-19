@@ -1,1 +1,30 @@
+idsource: inehrm_01
+url: https://cid-albertobeltran.cultura.gob.mx/wp-json/tainacan/v2/collection/1123746/items/
+url_parameters:
+  order: DESC
+  orderby: date
+  exposer: json-flat
+  mapper: dublin-core
+pagination:
+  request:
+    pagesize: 50
+    field_pagesize: perpage
+    field_page: page
+  response:
+    path_to_next_page: pagination.next_page
+    path_to_items: items
 
+transform:
+  rename:
+    fields:
+      - { from: "id", to: "payload.id", use_as_id: true }
+      - { from: "data.dc:identifier.value", to: "payload.identifier" }
+      - { from: "data.dc:title.value", to: "payload.title" }
+      - { from: "url", to: "payload.url" }
+      - { from: "thumbnail", to: "payload.thumbnail" }
+      - { from: "document", to: "payload.document" }
+  add_fields:
+    target: payload
+    fields:
+      institucion: "Centro de Información y Documentación CID"
+      coleccion: "UR Huajuapan Guillermo Círigo"
