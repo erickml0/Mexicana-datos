@@ -43,7 +43,7 @@ pipe:
       "638": "institucion" #ok
       "640": "coleccion" #
       "701": "fingerprint"
-      "6603": "epoca"  #taxonomia epoca historica
+      "6605": "epoca"  #taxonomia epoca historica
       #"650": "hash-content" 
       "679": "url"
       "_thumbnail": "thumbnail"
