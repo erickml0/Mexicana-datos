@@ -14,8 +14,8 @@ pipe:
       epoca:
         - ">"
         - "&gt;"
-    #capitalize:
-    #  - "epoca" #
+    capitalize:
+      - "epoca"
     add_hash:
       - target: "fingerprint"
         method: "md5"
