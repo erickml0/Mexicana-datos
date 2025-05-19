@@ -3,4 +3,4 @@ configs:
     file: https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/config.yml
     inputs:
       - "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/INEHRM.yml"
-      - "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/CID_huajuapan"
+      - "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/CID_huajuapan.yml"
