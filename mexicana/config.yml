@@ -10,7 +10,6 @@ pipe:
       - "url"
     lowercase:
       - "url"
-    capitalize:
       - "epoca"
     split: #
       epoca:
