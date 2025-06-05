@@ -6,6 +6,7 @@ pipe:
       - "id"
       - "identifier"
       - "title"
+      - "description"
       - "epoca" #taxonomia
       - "url"
     lowercase:
@@ -26,6 +27,7 @@ pipe:
           "id": null
           "identifier": null
           "title": null
+          "description": null
           "epoca": null
           "url": null
   target_collection:
@@ -37,6 +39,7 @@ pipe:
     metadata:
       "643": "id" #id del agregador ok
       "636": "title" #metadato titulo ok
+      "11": "description" #nuevo metadato
       "648": "identifier" #metadato id
       "638": "institucion" #ok
       "640": "coleccion" #
