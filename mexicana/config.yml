@@ -16,6 +16,11 @@ pipe:
       epoca:
         - ">"
         - "&gt;"
+      proveedor:
+        - ">"
+        - "&gt;"
+    capitalize:
+      - "proveedor"
     add_hash:
       - target: "fingerprint"
         method: "md5"
