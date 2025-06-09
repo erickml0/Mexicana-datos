@@ -29,6 +29,6 @@ transform:
   add_fields:
     target: payload
     fields:
-      #institucion: "Instituto Nacional de Estudios Históricos de las Revoluciones de México"
-      proveedor: "Instituto Nacional de Estudios Históricos de las Revoluciones de México"
+      institucion: "Instituto Nacional de Estudios Históricos de las Revoluciones de México"
+      #proveedor: "Instituto Nacional de Estudios Históricos de las Revoluciones de México"
       coleccion: "Exposiciones digitales"
