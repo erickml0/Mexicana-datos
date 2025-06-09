@@ -27,5 +27,5 @@ transform:
   add_fields:
     target: payload
     fields:
-      institucion: "Centro de Información y Documentación CID"
+      proveedor: "Centro de Información y Documentación CID"
       coleccion: "UR Huajuapan Guillermo Círigo"
