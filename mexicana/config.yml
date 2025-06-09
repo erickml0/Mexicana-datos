@@ -8,6 +8,7 @@ pipe:
       - "title"
       - "description"
       - "epoca" #taxonomia
+      - "proveedor" #taxonomia
       - "url"
     lowercase:
       - "url"
@@ -20,7 +21,8 @@ pipe:
         method: "md5"
         fields:
           id: null
-          institucion: null
+          #institucion: null
+          proveedor: null
       - target: "hash-content"
         method: "md5"
         fields:
@@ -43,6 +45,7 @@ pipe:
       "648": "identifier" #metadato id
       "638": "institucion" #ok
       "640": "coleccion" #
+      "95232": "proveedor" #proveedor nueva taxonomia
       #"701": "fingerprint" #comentado
       "6605": "epoca"  #taxonomia epoca historica
       "650": "hash-content" 
