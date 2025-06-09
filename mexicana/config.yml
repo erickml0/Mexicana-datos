@@ -8,7 +8,7 @@ pipe:
       - "title"
       - "description"
       - "epoca" #taxonomia
-      - "proveedor" #taxonomia
+      #- "proveedor" #taxonomia
       - "url"
     lowercase:
       - "url"
@@ -16,18 +16,13 @@ pipe:
       epoca:
         - ">"
         - "&gt;"
-      proveedor:
-        - ">"
-        - "&gt;"
-    capitalize:
-      - "proveedor"
     add_hash:
       - target: "fingerprint"
         method: "md5"
         fields:
           id: null
-          #institucion: null
-          proveedor: null
+          institucion: null
+          #proveedor: null
       - target: "hash-content"
         method: "md5"
         fields:
