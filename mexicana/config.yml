@@ -47,7 +47,7 @@ pipe:
       "640": "coleccion" #
       #"95232": "proveedor" #proveedor nueva taxonomia
       #"701": "fingerprint" #comentado
-      "6605": "epoca"  #taxonomia epoca historica
+      "6605" : "epoca"  #taxonomia epoca historica
       "650": "hash-content" 
       "679": "url"
       "_thumbnail": "thumbnail"
