@@ -29,3 +29,4 @@ transform:
     fields:
       institucion: "Centro de Información y Documentación CID"
       coleccion: "UR Huajuapan Guillermo Círigo"
+      proveedor: "CID"
