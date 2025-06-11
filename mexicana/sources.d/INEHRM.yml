@@ -30,5 +30,5 @@ transform:
     target: payload
     fields:
       institucion: "Instituto Nacional de Estudios Históricos de las Revoluciones de México"
-      #proveedor: "Instituto Nacional de Estudios Históricos de las Revoluciones de México"
       coleccion: "Exposiciones digitales"
+      proveedor: "INEHRM"
