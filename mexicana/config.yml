@@ -8,7 +8,6 @@ pipe:
       - "title"
       - "description"
       - "epoca" #taxonomia
-      #- "proveedor" #taxonomia
       - "url"
     lowercase:
       - "url"
@@ -24,7 +23,6 @@ pipe:
         fields:
           id: null
           institucion: null
-          #proveedor: null
       - target: "hash-content"
         method: "md5"
         fields:
@@ -33,6 +31,7 @@ pipe:
           "title": null
           "description": null
           "epoca": null
+          "proveedor": null
           "url": null
   target_collection:
     connection_name: "mexicana.tainacan"
@@ -47,7 +46,7 @@ pipe:
       "648": "identifier" #metadato id
       "638": "institucion" #ok
       "640": "coleccion" #
-      #"95232": "proveedor" #proveedor nueva taxonomia
+      "95232": "proveedor" #proveedor nueva taxonomia
       #"701": "fingerprint" #comentado
       "6605": "epoca"  #taxonomia epoca historica
       "650": "hash-content" 
