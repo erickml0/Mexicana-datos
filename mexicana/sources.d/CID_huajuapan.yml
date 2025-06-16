@@ -9,7 +9,7 @@ pagination:
   request:
     pagesize: 50
     field_pagesize: perpage
-    field_page: page
+    field_page: paged
   response:
     path_to_next_page: pagination.next_page
     path_to_items: items
