@@ -20,3 +20,4 @@ configs:
       - "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/RE_programas.yml"
       - "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/SyM_bcipf.yml"
       - "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/SyM_bcmpf.yml"
+      - "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/SyM_estudios_mon.yml"
