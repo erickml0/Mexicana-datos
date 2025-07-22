@@ -1,0 +1,32 @@
+idsource: mons_revistas
+url: https://bibliotecamexico-monsiteca.cultura.gob.mx/wp-json/tainacan/v2/collection/6467/items
+url_parameters:
+  order: DESC
+  orderby: date
+  exposer: json-flat
+  mapper: dublin-core
+pagination:
+  request:
+    pagesize: 50
+    field_pagesize: perpage
+    field_page: paged
+  response:
+    path_to_next_page: pagination.next_page
+    path_to_items: items
+
+transform:
+  rename:
+    fields:
+      - { from: "id", to: "payload.id", use_as_id: true }
+      - { from: "data.dc:identifier.value", to: "payload.identifier" }
+      - { from: "data.dc:title.value", to: "payload.title" }
+      - { from: "data.dc:description.value", to: "payload.description" }
+      - { from: "url", to: "payload.url" }
+      - { from: "thumbnail", to: "payload.thumbnail" }
+      - { from: "document", to: "payload.document" }
+  add_fields:
+    target: payload
+    fields:
+      institucion: "Monsiteca"
+      coleccion: "Colección Revistas"
+      proveedor: "Monsiteca"
