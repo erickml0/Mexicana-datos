@@ -30,3 +30,4 @@ configs:
       - "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/Ferrocarriles_MNFM_BMH.yml"
       - "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/CI_Acervo_Fotografico.yml"
       - "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/CI_Acervo_Bibliografico.yml"
+      - "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/CI_Acervo_HE.yml"
