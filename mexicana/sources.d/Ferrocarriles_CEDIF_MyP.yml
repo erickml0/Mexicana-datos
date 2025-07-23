@@ -28,5 +28,5 @@ transform:
     target: payload
     fields:
       institucion: "Colecciones de Patrimonio Ferrocarrilero del Centro Nacional para la Preservación del Patrimonio Cultural Ferrocarrilero"
-      coleccion: "Elementos de la colección CEDIF: Mapoteca y planoteca"
+      coleccion: "Colección CEDIF: Mapoteca y planoteca"
       proveedor: "CNPPCF"
