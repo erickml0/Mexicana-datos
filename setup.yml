@@ -32,3 +32,5 @@ configs:
       - "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/CI_Acervo_Fotografico.yml"
       - "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/CI_Acervo_Bibliografico.yml"
       - "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/CI_Acervo_HE.yml"
+      - "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/Original_Artesanos.yml"
+      - "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/Original_CA.yml"
