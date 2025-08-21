@@ -28,5 +28,5 @@ transform:
     target: payload
     fields:
       institucion: "Centro de Información y Documentación CID"
-      coleccion: "Colección Repositorio CID UR Durango 'Alfonso Flores Domene'"
+      coleccion: "Colección Repositorio CID UR Durango Alfonso Flores Domene"
       proveedor: "CID"
