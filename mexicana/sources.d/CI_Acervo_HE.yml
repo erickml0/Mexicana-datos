@@ -1,5 +1,5 @@
 idsource: ci_acervo_he
-url: http://repositorio.ci.cultura.gob.mx/ci/wp-json/tainacan/v2/collection/19207/items
+url: https://repositorio.ci.cultura.gob.mx/wp-json/tainacan/v2/collection/19207/items
 url_parameters:
   order: DESC
   orderby: date
