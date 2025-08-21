@@ -10,7 +10,7 @@ configs:
       - "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/FIC_carteles.yml"
       - "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/FIC_fotografico.yml"
       - "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/FIC_ef50.yml"
-      - "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/FIC_hemerogr%C3%A1fico.yml"
+      - "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/FIC_hemerografico.yml"
       - "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/Fondo_Reservado.yml"
       - "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/MONS_Comics.yml"
       - "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/MONS_FR.yml"
