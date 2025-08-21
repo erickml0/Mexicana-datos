@@ -1,5 +1,5 @@
 idsource: ci_acervo_bibliografico
-url: http://repositorio.ci.cultura.gob.mx/ci/wp-json/tainacan/v2/collection/122975/items
+url: https://repositorio.ci.cultura.gob.mx/wp-json/tainacan/v2/collection/122975/items
 url_parameters:
   order: DESC
   orderby: date
