@@ -11,10 +11,10 @@ pipe:
       - "url"
     lowercase:
       - "url"
-    split: #
-      epoca:
-        - ">"
-        - "&gt;"
+    #split: #
+    #  epoca:
+    #    - ">"
+    #    - "&gt;"
    #capitalize:
     #  - "epoca"
     add_hash:
