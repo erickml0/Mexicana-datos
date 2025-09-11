@@ -11,12 +11,12 @@ pipe:
       - "url"
     lowercase:
       - "url"
-    #split: #
-    #  epoca:
-    #    - ">"
-    #    - "&gt;"
-   #capitalize:
-    #  - "epoca"
+    split: #
+      epoca:
+        - ">"
+        - "&gt;"
+    capitalize:
+      - "epoca"
     add_hash:
       - target: "fingerprint"
         method: "md5"
