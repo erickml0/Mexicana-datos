@@ -32,4 +32,5 @@ transform:
       institucion: "Instituto Nacional de Estudios Históricos de las Revoluciones de México"
       coleccion: "Exposiciones digitales"
       proveedor: "INEHRM"
+      proveedor-nombre: "INEHRM"
       proveedor-url: "https://repositorio-inehrm.cultura.gob.mx/" #
