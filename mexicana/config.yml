@@ -51,6 +51,7 @@ pipe:
       "95232": "proveedor" #proveedor nueva taxonomia
       #"701": "fingerprint" #comentado
       "6605": "epoca"  #taxonomia epoca historica
+      "3182767": "proveedor-compuesto"
       "3182779": "proveedor-nombre"
       "3182773": "proveedor-url"
       "650": "hash-content" 
