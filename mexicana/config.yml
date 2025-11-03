@@ -35,6 +35,7 @@ pipe:
           "url": null
           "proveedor-nombre": null #nombre-compeusto
           "proveedor-url": null #url-compuesto
+          "proveedor-compuesto": null
   target_collection:
     connection_name: "mexicana.tainacan"
     collection_id: "6" #Colección destino
