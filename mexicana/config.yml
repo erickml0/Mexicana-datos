@@ -33,6 +33,8 @@ pipe:
           "epoca": null
           "proveedor": null
           "url": null
+          "proveedor-nombre": null #nombre-compeusto
+          "proveedor-url": null #url-compuesto
   target_collection:
     connection_name: "mexicana.tainacan"
     collection_id: "6" #Colección destino
@@ -49,6 +51,8 @@ pipe:
       "95232": "proveedor" #proveedor nueva taxonomia
       #"701": "fingerprint" #comentado
       "6605": "epoca"  #taxonomia epoca historica
+      "3182779": "proveedor-nombre"
+      "3182773": "proveedor-url"
       "650": "hash-content" 
       "679": "url"
       "_thumbnail": "thumbnail"
