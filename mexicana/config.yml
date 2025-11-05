@@ -9,6 +9,7 @@ pipe:
       - "description"
       - "epoca" #taxonomia
       - "url"
+      - "autor"
     lowercase:
       - "url"
     split: #
@@ -36,6 +37,7 @@ pipe:
           "proveedor-nombre": null #nombre-compeusto
           "proveedor-url": null #url-compuesto
           "proveedor-compuesto": null
+          "autor": null
   target_collection:
     connection_name: "mexicana.tainacan"
     collection_id: "6" #Colección destino
@@ -55,6 +57,7 @@ pipe:
       "3182767": "proveedor-compuesto"
       "3182779": "proveedor-nombre"
       "3182773": "proveedor-url"
+      "3195973": "autor"
       "650": "hash-content" 
       "679": "url"
       "_thumbnail": "thumbnail"
