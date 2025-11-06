@@ -23,7 +23,7 @@ transform:
       - { from: "data.dc:title.value", to: "payload.title" }
       - { from: "data.dc:description.value", to: "payload.description" }
       - { from: "data.dc:subject.value", to: "payload.epoca" }
-      - { from: "data.dc:creator", to: "payload.autor"}
+      - { from: "data.dc:creator.value", to: "payload.autor"}
       - { from: "url", to: "payload.url" }
       - { from: "thumbnail", to: "payload.thumbnail" }
       - { from: "document", to: "payload.document" }
