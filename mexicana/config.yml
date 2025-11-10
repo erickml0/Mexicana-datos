@@ -10,6 +10,8 @@ pipe:
       - "epoca" #taxonomia
       - "url"
       - "autor"
+    relationships:
+      "3195973": "3195956"  #metadato autor relación -> coleccion autoría
     clean_relationship:
       - "autor"
     lowercase:
