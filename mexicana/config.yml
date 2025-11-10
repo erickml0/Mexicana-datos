@@ -11,7 +11,7 @@ pipe:
       - "url"
       - "autor"
     clean_relationship:
-      - "autor-relacion"
+      - "autor"
     lowercase:
       - "url"
     split: #
