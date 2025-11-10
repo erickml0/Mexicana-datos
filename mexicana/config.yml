@@ -10,8 +10,6 @@ pipe:
       - "epoca" #taxonomia
       - "url"
       - "autor"
-    relationships:
-      "3195973": "3195956"  #metadato autor relación -> coleccion autoría
     clean_relationship:
       - "autor"
     lowercase:
@@ -48,6 +46,8 @@ pipe:
     metadata_identifier: "643" #701
     metadata_hash_content: "650" #hash de los metadatos por si cambio alguno
     ignore_items_without_identifier: true # ignorar el item en caso no tenga metadato identificador
+    relationships:
+      "3195973": "3195956"  #metadato autor relación -> coleccion autoría
     metadata:
       "643": "id" #id del agregador ok
       "636": "title" #metadato titulo ok
