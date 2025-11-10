@@ -10,6 +10,8 @@ pipe:
       - "epoca" #taxonomia
       - "url"
       - "autor"
+    clean_relationship:
+      - "autor-relacion"
     lowercase:
       - "url"
     split: #
