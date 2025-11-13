@@ -138,6 +138,13 @@ sequenceDiagram
     end
 ```
 
+```
+INSERT Cache = Guardar items descargados de APIs (datos crudos)
+READ Cache = Leer items crudos para transformarlos
+UPDATE Cache = Guardar items ya transformados en colección final
+READ Final = Leer items transformados para enviar a Tainacan
+```
+
 ## Esquema del proceso de agregación de ítems
 
 ```mermaid
