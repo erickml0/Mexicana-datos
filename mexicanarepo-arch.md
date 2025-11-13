@@ -138,6 +138,100 @@ sequenceDiagram
     end
 ```
 
+## Esquema del proceso de agregación de ítems
+
+```mermaid
+flowchart TD
+    Start([Inicio: TainacanDestinationOperator]) --> ReadMongo[Lee items de MongoDB<br/>aggregation_items_data]
+    
+    ReadMongo --> CheckItem{Verificar estado<br/>del item}
+    
+    CheckItem -->|to_remove = true| DeleteItem[Eliminar item<br/>de Tainacan]
+    DeleteItem --> CountRemove[count_remove++]
+    CountRemove --> NextItem
+    
+    CheckItem -->|to_update = true<br/>O ref_id = null| ProcessItem[Preparar datos<br/>según mapeo metadatos]
+    
+    ProcessItem --> CheckRefId{¿Item ya existe<br/>en Tainacan?<br/>ref_id existe?}
+    
+    CheckRefId -->|No: ref_id = null| CreateItem[POST /collection/items<br/>Crear nuevo item en draft]
+    CheckRefId -->|Sí: ref_id existe| UpdateItem[Usar item existente<br/>ref_id]
+    
+    CreateItem --> GetItemId[Obtener item_id]
+    UpdateItem --> GetItemId
+    
+    GetItemId --> LoopMeta[Iterar sobre<br/>cada metadato]
+    
+    LoopMeta --> CheckRelation{¿Es metadato<br/>tipo Relación?}
+    
+    CheckRelation -->|Sí| SearchRelated[GET buscar item<br/>por título en colección<br/>relacionada]
+    
+    SearchRelated --> RelatedExists{¿Existe item<br/>relacionado?}
+    
+    RelatedExists -->|No| CreateRelated[POST crear item<br/>en colección relacionada<br/>Status: draft → publish]
+    RelatedExists -->|Sí| UseRelatedId[Usar ID del item<br/>encontrado]
+    
+    CreateRelated --> GetRelatedId[Obtener related_item_id]
+    UseRelatedId --> GetRelatedId
+    
+    GetRelatedId --> PatchMeta[PATCH /item/id/metadata/meta_id<br/>Actualizar con related_item_id]
+    
+    CheckRelation -->|No| PatchMeta
+    
+    PatchMeta --> MoreMeta{¿Más metadatos?}
+    MoreMeta -->|Sí| LoopMeta
+    MoreMeta -->|No| CheckDoc{¿Tiene documento?}
+    
+    CheckDoc -->|Sí| UpdateDoc[PATCH /items/id<br/>Actualizar document + document_type]
+    CheckDoc -->|No| CheckThumb
+    
+    UpdateDoc --> CheckThumb{¿Tiene miniatura?}
+    
+    CheckThumb -->|Sí| DownloadImage[Descargar imagen<br/>desde URL]
+    DownloadImage --> UploadMedia[POST /wp/v2/media<br/>Subir como attachment]
+    UploadMedia --> GetAttachId[Obtener attachment_id]
+    GetAttachId --> SetThumb[PATCH /items/id<br/>Asignar _thumbnail_id]
+    SetThumb --> PublishItem
+    
+    CheckThumb -->|No| PublishItem{¿Es item nuevo?}
+    
+    PublishItem -->|Sí| Publish[PATCH /items/id<br/>Status: publish]
+    PublishItem -->|No| UpdateMongo
+    
+    Publish --> UpdateMongo[Actualizar MongoDB<br/>Guardar ref_id y hash]
+    
+    UpdateMongo --> CountUpsert[count_upsert++]
+    CountUpsert --> NextItem
+    
+    CheckItem -->|to_update = false<br/>Y ref_id existe| IgnoreItem[Ignorar item<br/>sin cambios]
+    IgnoreItem --> CountIgnored[count_ignored++]
+    CountIgnored --> NextItem
+    
+    NextItem{¿Más items<br/>en página?}
+    NextItem -->|Sí| CheckItem
+    NextItem -->|No| CheckPage{¿Más páginas<br/>en MongoDB?}
+    
+    CheckPage -->|Sí| ReadMongo
+    CheckPage -->|No| Summary[Mostrar resumen:<br/>Total, Upserted, Removed, Ignored]
+    
+    Summary --> End([Fin])
+    
+    %% Estilos
+    classDef mongoClass fill:#47A248,stroke:#3E8E41,color:#fff
+    classDef tainacanClass fill:#298596,stroke:#1a5764,color:#fff
+    classDef decisionClass fill:#FF9800,stroke:#E65100,color:#fff
+    classDef actionClass fill:#2196F3,stroke:#1565C0,color:#fff
+    classDef endClass fill:#4CAF50,stroke:#2E7D32,color:#fff
+    classDef deleteClass fill:#F44336,stroke:#C62828,color:#fff
+    
+    class ReadMongo,UpdateMongo mongoClass
+    class CreateItem,UpdateItem,PatchMeta,UpdateDoc,SetThumb,Publish,UploadMedia,CreateRelated tainacanClass
+    class CheckItem,CheckRefId,CheckRelation,RelatedExists,CheckDoc,CheckThumb,PublishItem,NextItem,CheckPage decisionClass
+    class ProcessItem,GetItemId,SearchRelated,UseRelatedId,GetRelatedId,DownloadImage,GetAttachId actionClass
+    class Start,End,Summary endClass
+    class DeleteItem,IgnoreItem deleteClass
+```
+
 ## Componentes y dependencias
 
 ### **Airflow Webserver**
