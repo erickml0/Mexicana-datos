@@ -47,7 +47,9 @@ pipe:
     metadata_hash_content: "650" #hash de los metadatos por si cambio alguno
     ignore_items_without_identifier: true # ignorar el item en caso no tenga metadato identificador
     relationships:
-      "3195973": "3195956"  #metadato autor relación -> coleccion autoría
+      "3195973": #Metadato nombre de autor en Acervos digitales
+        collection_id: "3195956" #Colección de Agentes
+        inverse_metadata_id: "3797151"  #Metadato obra en colección Agentes
     metadata:
       "643": "id" #id del agregador ok
       "636": "title" #metadato titulo ok
