@@ -2,11 +2,11 @@ configs:
   - name: "mexicana"
     file: https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/config.yml
     inputs:
-      - "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/INEHRM_fototeca.yml"
+      #- "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/INEHRM_fototeca.yml"
       #- "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/INEHRM_expo_dig.yml"
       #- "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/CID_huajuapan.yml"
       #- "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/CID_durango.yml"
-      - "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/CID_Repo_Bilbio.yml"
+      #- "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/CID_Repo_Bilbio.yml"
       #- "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/FIC_carteles.yml"
       #- "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/FIC_fotografico.yml"
       #- "https://raw.githubusercontent.com/erickml0/Mexicana-datos/refs/heads/main/mexicana/sources.d/FIC_ef50.yml"
