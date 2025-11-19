@@ -139,9 +139,9 @@ sequenceDiagram
 ```
 
 ```
-INSERT Cache = Guardar items descargados de APIs (datos crudos)
-READ Cache = Leer items crudos para transformarlos
-UPDATE Cache = Guardar items ya transformados en colección final
+INSERT Cache = Guardar items descargados de APIs (datos)
+READ Cache = Leer ítems para transformarlos
+UPDATE Cache = Guardar ítems ya transformados en colección final
 READ Final = Leer items transformados para enviar a Tainacan
 ```
 
@@ -246,7 +246,6 @@ flowchart TD
 - **Función**: Interfaz web para gestionar DAGs
 - **Conexiones**:
   - PostgreSQL: Metadata de usuarios, DAGs, ejecuciones
-  - Redis: Indirecto (vía workers)
 
 ### **Airflow Scheduler**
 - **Función**: Orquestador principal de tareas
@@ -280,10 +279,9 @@ flowchart TD
 
 ### **Mongo Express**
 - **Puerto**: 8081
-- **Función**: UI web para inspeccionar MongoDB
-- **Credenciales**: `tainacan`/`tainacan`
+- **Función**: UI web para MongoDB
 
-### **Flower (Opcional)**
+### **Flower**
 - **Puerto**: 5555
 - **Función**: Monitor web de Celery workers
 - **Activación**: `docker-compose --profile flower up`
