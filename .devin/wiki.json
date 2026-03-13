@@ -1,0 +1,11 @@
+{
+  "generation_settings": {
+    "language": "es",
+    "tone": "professional",
+    "translate_comments": true
+  },
+  "wiki_config": {
+    "title": "Mexicana datos",
+    "description": "Explicación detallada del pipeline de datos."
+  }
+}
