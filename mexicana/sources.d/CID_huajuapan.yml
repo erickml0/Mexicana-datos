@@ -21,6 +21,7 @@ transform:
       - { from: "data.dc:identifier.value", to: "payload.identifier" }
       - { from: "data.dc:title.value", to: "payload.title" }
       - { from: "data.dc:description.value", to: "payload.description" }
+      - { from: "data.dc:creator.value", to: "payload.autor"}
       - { from: "url", to: "payload.url" }
       - { from: "thumbnail", to: "payload.thumbnail" }
       - { from: "document", to: "payload.document" }
