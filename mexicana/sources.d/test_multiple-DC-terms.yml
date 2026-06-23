@@ -1,5 +1,5 @@
 idsource: test_tainacan
-url: http://172.17.175.137/tainacan-dev/index.php/wp-json/tainacan/v2/collection/6/items
+url: http://172.17.175.137/tainacan-dev/wp-json/tainacan/v2/collection/6/items
 url_parameters:
   order: DESC
   orderby: date
