@@ -24,5 +24,3 @@ transform:
       - { from: "url", to: "payload.url" }
       - { from: "thumbnail", to: "payload.thumbnail" }
       - { from: "document", to: "payload.document" }
-  add_fields:
-    target: payload
